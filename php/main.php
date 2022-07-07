@@ -1,4 +1,5 @@
 <?php
+include("connectingBD.php");
 
 // verificar se o button com value["send"] foi clicado
 if(isset($_POST["send"])){
