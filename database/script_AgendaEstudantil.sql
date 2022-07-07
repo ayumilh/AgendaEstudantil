@@ -16,7 +16,7 @@ atv_desc VARCHAR(150) NOT NULL,
 foto VARCHAR(200),
 link VARCHAR(200),
 observacao VARCHAR(250),
-entrega DATE,
+entregar DATE,
 FOREIGN KEY (sigla) REFERENCES materia (sigla) 
 ); 
 
