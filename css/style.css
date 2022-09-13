@@ -9,3 +9,59 @@
   --verde-claro-cyber: #22D1A3;
   --verde-escuro-cyber: #1A6352;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #060022;
+}
+a{
+  color: cornsilk;
+  text-decoration: none;
+}
+a:hover{
+  opacity: 0.7;
+}
+
+ul{
+  list-style: none;
+}
+
+.logo{
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Ubuntu';
+  background-color: #080030;
+  height: 10vh;
+}
+
+.nav-list{
+  display: flex;
+}
+.nav-list li{
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+/* para menu hamburguer: https://www.youtube.com/watch?v=bHRXRYTppHM */
+
+/* submenu no Recursos */
+.nav-list li ul{
+  position: absolute;
+  display: none;
+}
+.nav-list li:hover ul, .nav-list li.over ul{
+  display: block;
+}
+.nav-list li ul li{
+  display: block;
+  width: 150px;
+}
