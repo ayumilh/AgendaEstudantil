@@ -4,90 +4,150 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><!--Bootstrap -->
+  <!--Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/home.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,400;0,800;1,500&display=swap" rel="stylesheet">
 
   <title>Home</title>
 </head>
 <body>
-  
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <!--a Home -->
-    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-        </li>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg justify-content-around">
+      <!-- logo -->
+      <a class="navbar-brand" href="#">Agenda Estudantil</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- menu hamburgue -->
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <!-- fast task -->
+        <div class="input-group">
 
-        <!--a link -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Ação</a>
-            <a class="dropdown-item" href="#">Outra ação</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Algo mais aqui</a>
-          </div>
-        </li>
-
-        <!-- button desativado -->
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Desativado</a>
-        </li>
-      </ul>
-
-      <!-- Atalho de criação rapida de tarefa -->
-      <div class="input-group input-group-sm">
-        <div class="input-group-pretend">
-          <input type="text" class="form-control form-control-sm" placeholder="Criar uma nova nota..." aria-label="Criar uma nova nota..." aria-describedby="inputGroup-sizing-sm">
-        <div class="input-group-append" id="button-addon4">
-          <!-- add imagem -->
-          <button class="btn btn-outline-secondary" type="button"><img src="/img/task-image.svg" alt=""></button>
-          <!-- add lista -->
-          <button class="btn btn-outline-secondary" type="button"><img src="/img/task-checklist.svg" alt=""></button>
+          <form class="form-inline my-2 my-lg-0">
+            <input type="text" class="form-control form-control-sm" placeholder="Criar uma nova nota..." aria-label="Criar uma nova nota..." aria-describedby="inputGroup-sizing-sm">
+            <!-- add imagem -->
+            <button class="btn fast-task my-2 my-sm-1" type="button"><img src="/img/task-image.svg" alt=""></button>
+            <!-- add lista -->
+            <button class="btn fast-task my-2 my-sm-1" type="button"><img src="/img/task-checklist.svg" alt=""></button>
+          </form>
         </div>
+  
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        </form>
+
+        <!-- inicializador do model -->
+        <button type="button" class="btn fast-task" data-toggle="modal" data-target="#btn-user-account">
+          <img src="/img/nav-user-account.svg" alt="account circle user">
+        </button>
+
+        <!-- modal -->
+        <div class="modal fade" id="btn-user-account" tabindex="-1" role="dialog" aria-labelledby="btn-user-accountLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="btn-user-accountLabel">Conta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <img src="/img//config-modal.svg" alt="">
+                  <span id="configPNG" aria-hidden="true"></span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <!-- username -->
+                    <label for="username">Username</label><br>
+                    <input class="form-control" type="text" name="username" placeholder="Seu apelido">
+                  </div>
+
+                  <div class="form-group">
+                    <!-- bio -->
+                    <label for="bio" class="col-form-label">Bio:</label>
+                    <textarea class="form-control" placeholder="Sobre você"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <!-- foto do perfil -->
+                  </div>
+
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn">Save changes</button>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-      </form>
-    </div>
-  </nav>
-
-  <aside>
-    <!-- barra de menu lateral -->
-
-  </aside>
-
-  <main>
-    <section>
-      <!-- ferramenta flutuante de facil criação de atividade -->
-    </section>
-
-
-  </main>
-
-  <footer>
-    <!-- rodapé do site -->
+    </nav>
   
-  </footer>
-
+    <aside>
+      <!-- barra de menu lateral -->
+  
+    </aside>
+  
+    <main>
+      <section>
+        <!-- ferramenta flutuante de facil criação de atividade -->
+      </section>
+  
+  
+    </main>
+  
+    <footer>
+      <!-- rodapé do site -->
+    
+    </footer>
+  </div>
+ 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+<!-- 
+<ul class="navbar-nav mr-auto">
+  <li class="nav-item active">
+    <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+  </li> -->
+
+  <!--a link -->
+  <!-- <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li> -->
+
+  <!-- Dropdown -->
+  <!-- <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Ação</a>
+      <a class="dropdown-item" href="#">Outra ação</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Algo mais aqui</a>
+    </div>
+  </li> -->
+
+  <!-- button desativado -->
+  <!-- <li class="nav-item">
+    <a class="nav-link disabled" href="#">Desativado</a>
+  </li>
+</ul>
+
+
+ -->
