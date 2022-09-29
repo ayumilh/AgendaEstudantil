@@ -1,3 +1,6 @@
+# Pesquisar
+> https://devgabrielsouza.com.br/10-atributos-html-que-voce-precisa-conhecer/#:~:text=Com%20o%20atributo%20spellcheck%2C%20%C3%A9,com%20erros%20de%20qualquer%20forma.
+> spellcheck: avisa ao usuário sobre possíveis erros ortográficos
 # Nav
 **div 1**
 ```
