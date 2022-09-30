@@ -1,0 +1,45 @@
+:root{
+  --black-background: #171719;
+  --green-background: #212124;
+  --input-background: #2A2A2A;
+  --default-txt: #7e8180d1;
+
+  --azul-ceu-cyber: #22A0B6;
+  --azul-claro-cyber: #133E7C;
+  --azul-noite-cyber: #051A2D;
+  --rosa-claro-cyber: #952670;
+  --roxo-escuro-cyber: #3E1A63;
+  --roxo-claro-cyber: #7805DB;
+  --verde-claro-cyber: #22D1A3;
+  --verde-escuro-cyber: #1A6352;
+  --verde-escuro-transp: rgba(26, 99, 82, 8);
+
+}
+
+/* form -> bootstrap */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
