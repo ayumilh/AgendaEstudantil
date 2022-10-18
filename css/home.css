@@ -40,6 +40,13 @@ nav{
   padding: 10px 20px;
 }
 
+input.form-control, 
+button.btn-task-fast{
+  background-color: #f8f8f81d;
+  border-radius: 16px;
+}
+
+
 /* sidebar */
 aside{
   position: fixed;
