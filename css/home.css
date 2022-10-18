@@ -1,136 +1,172 @@
 :root{
-  --black-background: #171719;
-  --green-background: #212124;
-  --input-background: #2A2A2A;
-  --default-txt: #7e8180d1;
-
   --azul-ceu-cyber: #22A0B6;
   --azul-claro-cyber: #133E7C;
   --azul-noite-cyber: #051A2D;
-  --rosa-claro-cyber: #952670;
-  --roxo-escuro-cyber: #3E1A63;
+  --rosa-claro-cyber: #E93BAE;
+  --roxo-escuro-cyber: #1D1546;
   --roxo-claro-cyber: #7805DB;
+  --roxo-cyber: #3E1A63;
   --verde-claro-cyber: #22D1A3;
   --verde-escuro-cyber: #1A6352;
-  --verde-escuro-transp: rgba(26, 99, 82, 8);
-
 }
+
 *{
   margin: 0;
   padding: 0;
-}
-body{
-  background-color: var(--black-background);
+  box-sizing: border-box;
 }
 
-/* desativando bootrap */
-.btn:focus{
-  box-shadow: none;
-}
-.form-control, .form-control:focus, .form-control:hover, .form-control::before{
-  color: #495057;
-  background-color: transparent;
-  border-color: transparent;
-  outline:transparent;
+body{
+  background-color: #a6a6a6;
+
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: aliceblue;
 }
 
 /* nav */
-nav.navbar{
-  transition: 1s;
-  background-color: var(--green-background);
-  box-shadow: 0 0 0.5em var(--rosa-claro-cyber);
+nav{
+  background-color: var(--azul-noite-cyber);
+  border-radius: 50px;
+  display: block;
 
-  border-radius: 10px;
-}
-nav.navbar:hover{
-  transition: 1s;
-  box-shadow: 0 0 1.5em var(--rosa-claro-cyber);
+  width: 40%;
+  top: 14px;
+  left: 100px;
+  margin-left: 30%;
+  margin-right: 50%;
+
+  padding: 10px 20px;
 }
 
-/* input */
-.form-control::placeholder{
-  font-family: 'Saira';
-  font-weight: 500;
-  font-style: italic;
-  font-size: 10pt;
-}
-input.form-control{
-  background-color: var(--input-background);
-  border: none;
-  border-radius: 10px;
+/* sidebar */
+aside{
+  position: fixed;
+  background-color: var(--azul-noite-cyber);
+  border-radius: 20px;
+  display: block;
+
+  padding: 10px 20px;
   
-}
-input.form-control:hover{
-  transition: 0.6s;
-  box-shadow: 0 0 0.8em var(--roxo-escuro-cyber);
-}
-input.form-control:focus{
-  background-color: var(--input-background);
-  color: var(--default-txt);
+  height: 100vh;
+  width: 200px;
+
 }
 
-/* fast task */
-nav .btn{
-  background-color: var(--input-background);
-  box-shadow: 0 0 0.2em var(--roxo-escuro-cyber);
-  border-radius: 8px;
-}
-nav .btn:hover{
-  transition: 0.6s;
-  box-shadow: 0 0 0.8em var(--roxo-escuro-cyber);
+.sidebar{
+  left: 0;
+  top: 0;
+  height: 100%;
+  transition: all 0.3s ease;
+} 
+
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-/* logo */
-a.navbar-brand{
-  color: var(--roxo-escuro-cyber);
-  font-family: 'Saira';
-  font-weight: 800;
+.sidebar .logo-container .logo{
+  width: 100%;
+  height: 50px;
+  display: block;
+  align-items: center;
+  font-size: 23px;
+  margin-left: 20px;
 }
 
-/* config-modal */
-div.modal{
-  background-color: rgba(0, 0, 0, 0.60);
-  transition: 1s;
-}
-div.modal-content{
-  background-color: var(--green-background);
-  border-radius: 10px;
-  box-shadow: 0 0 1em var(--rosa-claro-cyber);
-}
-div.modal div.modal-header, div.modal-body{
-  border-bottom: none;
-}
-div.modal-footer{
-  border-top: none;
-}
-
-/* button config */
-button span#configPNG{
-  background-image: ("/img/config-modal.svg");
+.sidebar .bx-left-arrow{
+  position: absolute;
+  top: 35%;
+  left: 220px;
+  transform: translate(-50%);
+  width: 50px;
+  height: 263.85px;
+  line-height: 250px;
+  text-align: center;
+  font-size: 27px;
+  cursor: pointer;
+  /*para saber que o elemento é clicavel, mãozinha*/
+  color: var(--verde-claro-cyber);
+  background-color: var(--azul-noite-cyber);
+  border-radius: 0px 12px 12px 0px;
 }
 
-/* title all */
-h5.modal-title{
-  color: var(--verde-escuro-cyber);
-}
-div.modal label{
-  color: var(--verde-escuro-cyber);
+.sidebar ul{
+  margin-top: 30px;
 }
 
-/* input-modal */
-div.form-group .form-control{
-  background-color: var(--input-background);
-  color: var(--default-txt);
-  border: transparent;
-  border-radius: 10px;  
-}
-div.form-group .form-control:hover{
-  transition: 0.6s;
-  box-shadow: 0 0 0.4em var(--roxo-escuro-cyber);
-}
-div.form-group .form-control:focus{
-  background-color: var(--input-background);
-  color: var(--default-txt);
+.sidebar li{
+  list-style-type: none;
+  font-size: 18px;
 }
 
-/* footer */
+.sidebar ul li{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 7px;
+}
+
+/* barra de pesquisa
+
+.sidebar ul li input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+  background: 
+}
+
+*/
+
+.sidebar ul li a{
+  align-items: center;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: all 0s ease-in;
+}
+
+.sidebar ul li a:hover{
+  color: var(--verde-claro-cyber);
+  /* ideia para efeito
+  background-color: white;*/
+}
+
+.sidebar ul li i{
+  min-width: 29px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 12px;
+
+}
+
+.bx-chevron-down{
+  padding: 3px;
+}
+
+.profile-container{
+  color: var(--azul-note-cyber);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.tGrupo{
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+  width: 100%;
+  padding: 10px;
+}
+
+.tGrupo .bxs-user-circle{
+  font-size: 36px;
+  padding: 6px;
+  padding-right: 1px;
+}
