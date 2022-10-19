@@ -1,4 +1,7 @@
 :root{
+  --background-body: #0F0416;
+  --text-default: #ebebeb;
+
   --azul-ceu-cyber: #22A0B6;
   --azul-claro-cyber: #133E7C;
   --azul-noite-cyber: #051A2D;
@@ -17,10 +20,7 @@
 }
 
 body{
-  background-color: #a6a6a6;
-
-  width: 100%;
-  min-height: 100vh;
+  background-color: var(--background-body);
   overflow: hidden;
   color: aliceblue;
 }
@@ -31,20 +31,30 @@ nav{
   border-radius: 50px;
   display: block;
 
-  width: 40%;
   top: 14px;
-  left: 100px;
-  margin-left: 30%;
-  margin-right: 50%;
+  left: 40%;
+  width: 500px;
 
   padding: 10px 20px;
 }
 
 input.form-control, 
 button.btn-task-fast{
-  background-color: #f8f8f81d;
   border-radius: 16px;
+  border-color: transparent;
+  background-color: transparent;
+  color: #ebebebc4;
 }
+input.form-control:hover, .form-control:focus{
+  background-color: transparent;
+  color: var(--text-default);
+  border-color: transparent;
+  box-shadow: 0 0 0 0;
+}
+input.form-control::placeholder, .form-control:hover{
+  color: var(--text-default);
+}
+
 
 
 /* sidebar */
@@ -176,4 +186,20 @@ a{
   font-size: 36px;
   padding: 6px;
   padding-right: 1px;
+}
+
+/* CSS media query */
+@media screen and (max-width: 767px){
+  nav{
+    left: 45%;
+    width: 250px;
+
+  }
+}
+
+@media screen and (min-width: 767px){
+  nav{
+    width: 350px;
+
+  }
 }
