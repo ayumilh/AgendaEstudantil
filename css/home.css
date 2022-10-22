@@ -24,6 +24,14 @@ body{
   overflow: hidden;
   color: aliceblue;
 }
+/* header -> modal */
+header{
+  
+}
+header button{
+  left: 900px;
+
+}
 
 /* nav */
 nav{
