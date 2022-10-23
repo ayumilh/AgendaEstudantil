@@ -1,6 +1,8 @@
+/* header -> button do user: arrumar a posição dele: está em baixo do aside*/
 :root{
   --background-body: #0F0416;
   --text-default: #ebebeb;
+  --green-background: #212124;
 
   --azul-ceu-cyber: #22A0B6;
   --azul-claro-cyber: #133E7C;
@@ -22,15 +24,13 @@
 body{
   background-color: var(--background-body);
   overflow: hidden;
-  color: aliceblue;
+  color: var(--text-default);
+  font-family: 'Roboto';
 }
 /* header -> modal */
 header{
-  
-}
-header button{
-  left: 900px;
-
+  display: block;
+  left: 90vw;
 }
 
 /* nav */
@@ -41,7 +41,7 @@ nav{
 
   top: 14px;
   left: 40%;
-  width: 500px;
+  width: 100px;
 
   padding: 10px 20px;
 }
@@ -51,7 +51,19 @@ button.btn-task-fast{
   border-radius: 16px;
   border-color: transparent;
   background-color: transparent;
-  color: #ebebebc4;
+  color: #ebebebab;
+
+  font-size: 14pt;
+  font-family: 'Roboto';
+}
+input#task-fast:focus, input#task-fast:hover{
+  font-family: 'Roboto';
+  color: var(--text-default);
+}
+input#task-fast::placeholder{
+  font-size: 11pt;
+  font-family: 'Roboto Mono';
+  color: #ebebebab;
 }
 input.form-control:hover, .form-control:focus{
   background-color: transparent;
@@ -63,7 +75,23 @@ input.form-control::placeholder, .form-control:hover{
   color: var(--text-default);
 }
 
+button i{
+  font-size: 24px;
+}
+.btn-task-fast:hover{
+  color: var(--verde-claro-cyber);
+}
 
+/* icone do perfil do usuario */
+header{
+  display: flex;
+
+  left: 50%;
+}
+header i{
+  color: var(--text-default);
+  font-size: 24pt;
+}
 
 /* sidebar */
 aside{
@@ -211,3 +239,5 @@ a{
 
   }
 }
+
+
