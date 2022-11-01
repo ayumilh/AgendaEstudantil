@@ -1,0 +1,72 @@
+:root{
+  --background-body: #0F0416;
+  --text-default: #ebebeb;
+  --green-background: #212124;
+
+  --azul-ceu-cyber: #22A0B6;
+  --azul-claro-cyber: #133E7C;
+  --azul-noite-cyber: #051A2D;
+  --rosa-claro-cyber: #E93BAE;
+  --roxo-escuro-cyber: #1D1546;
+  --roxo-claro-cyber: #7805DB;
+  --roxo-cyber: #3E1A63;
+  --verde-claro-cyber: #22D1A3;
+  --verde-escuro-cyber: #1A6352;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--background-body);
+  overflow: hidden;
+  color: var(--text-default);
+}
+
+/* bootstraap */
+div.container-fluid{
+  padding: 0rem;
+}
+
+/* header */
+div.header{
+  background-color: var(--azul-ceu-cyber);
+}
+
+/* nav - task fast e icon user*/
+div.nav{
+  background-color: var(--rosa-claro-cyber);
+}
+
+/* aside - sidebar*/
+div.aside{
+  background-color: var(--verde-escuro-cyber);
+}
+
+/* main */
+div.main{
+  background-color: var(--roxo-cyber);
+}
+
+/* article - calendario */
+div.article{
+  background-color: var(--verde-claro-cyber);
+}
+
+
+
+
+/* media querius tablet - 767 minimo do web */
+@media(min-width: 769px) and (max-width: 1024px){
+ 
+  
+}
+
+/* media querius mobile - 767 max do web */
+@media(min-width: 375px) {
+
+}
+
