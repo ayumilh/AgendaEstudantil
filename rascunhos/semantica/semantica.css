@@ -1,6 +1,7 @@
 :root{
   --background-body: #0F0416;
   --text-default: #ebebeb;
+  --text-tnp: #ebebeb99;
   --green-background: #212124;
 
   --azul-ceu-cyber: #22A0B6;
@@ -18,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu';
 }
 
 body{
@@ -32,23 +34,140 @@ div.container-fluid{
 }
 
 /* header */
-div.header{
-  background-color: var(--azul-ceu-cyber);
+header{
+  background-color: var(--azul-noite-cyber);
+  height: 70px;
+}
+div.logo{
+  margin-top: 14px;
 }
 
 /* nav - task fast e icon user*/
-div.nav{
-  background-color: var(--rosa-claro-cyber);
+nav{
+  background-color: var(--azul-noite-cyber);
+  color: var(--text-tnp);
+  padding: 10px 20px;
+}
+nav i{
+  font-size: 20pt;
+  color: var(--text-tnp);
+}
+.input-group{
+ border-color: var(--azul-ceu-cyber);
+}
+input.form-control, 
+button.btn-task-fast{
+  border-radius: 16px;
+  border-color: transparent;
+  background-color: transparent;
+
+  font-size: 14pt;
+}
+input#task-fast:focus, input#task-fast:hover{
+  color: var(--text-default);
+}
+input#task-fast::placeholder{
+  font-size: 12pt;
+  font-weight: 400;
+  color: var(--text-tnp);
+}
+input.form-control:hover, .form-control:focus{
+  background-color: transparent;
+  color: var(--text-default);
+  border-color: transparent;
+  box-shadow: 0 0 0 0;
+}
+input.form-control::placeholder, .form-control:hover{
+  color: var(--text-default);
 }
 
 /* aside - sidebar*/
-div.aside{
-  background-color: var(--verde-escuro-cyber);
+
+.sidebar{
+  background-color: var(--azul-noite-cyber);
+  position: fixed;
+
+  height: 100%;
+  padding: 15px 2px;
+  transition: all 0.3s ease;
+}
+/* barra lateral */
+/* 
+.sidebar .bx-left-arrow{
+  background-color: var(--azul-noite-cyber);
+  position: absolute;
+  width: 50px;
+  height: 263.85px;
+  border-radius: 0px 12px 12px 0px;
+  cursor: pointer;
+  
+  line-height: 250px;
+  text-align: center;
+  font-size: 26px;
+  color: var(--verde-claro-cyber);
+  
+  transform: translate(-50%);
+  top: 35%;
+  left: 280px;
+
+}
+ */
+.sidebar ul{
+  margin-top: 30px;
+}
+.sidebar li{
+  list-style-type: none;
+  font-size: 18px;
+}
+.sidebar ul li{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 7px;
+}
+
+.sidebar ul li a{
+  align-items: center;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: all 0s ease-in;
+}
+
+.sidebar ul li a:hover{
+  color: var(--verde-claro-cyber);
+  /* ideia para efeito
+  background-color: white;*/
+}
+
+.sidebar ul li i{
+  min-width: 29px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 12px;
+
+}
+.bx-chevron-down{
+  padding: 3px;
+}
+
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tGrupo{
+  position: absolute;
+  left: 0;
+  bottom: 45%;
+  width: 100%;
+  padding: 14px 20px;
 }
 
 /* main */
 div.main{
-  background-color: var(--roxo-cyber);
+  background-color: var(--background-body);
 }
 
 /* article - calendario */

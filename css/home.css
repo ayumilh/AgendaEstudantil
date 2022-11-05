@@ -106,24 +106,22 @@ aside{
   width: 200px;
 
 }
-
+/* sidebar */
 .sidebar{
+  position: fixed;
+  width: 200px;
   left: 0;
   top: 0;
   height: 100%;
+  background-color: var(--azul-noite-cyber);
+  padding: 30px 10px;
   transition: all 0.3s ease;
-} 
-
-a{
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: 0.3s;
 }
 
 .sidebar .logo-container .logo{
   width: 100%;
   height: 50px;
-  display: block;
+  display: flex;
   align-items: center;
   font-size: 23px;
   margin-left: 20px;

@@ -26,21 +26,25 @@
     <div class="row">
 
       <!-- header logo -->
-      <div class="header col col-2 align-self-start">
-        <div class="logo">
+      <header class="col col-2 align-self-start">
+        <div class="logo" align="center">
           <i class='bx bxs-lemon'></i>
-          <div class="logoName">Lara Ayumi</div>
+          <div class="logo-name">Agenda Estudantil</div>
         </div>
-      </div>
+      </header>
 
       <!-- navbar -->
-      <div class="nav col col-10">
+      <nav class="navbar col col-10 justify-content-around">
         <form action="" class="d-flex">
           <div class="input-group">
-            <input type="text" class="form-control" id="task-fast"  placeholder="Criar..." aria-label="Criar tarefa...">
+            <input type="text" class="form-control" id="task-fast" placeholder="Criar..." aria-label="Criar tarefa...">
             
-            <button class="btn btn-task-fast" type="button"><i class='bx bx-list-plus'></i></button>
-            <button class="btn btn-task-fast" type="button"><i class='bx bxs-image-add'></i></i></button>
+            <button class="btn btn-task-fast" type="button">
+              <i class='bx bx-list-plus'></i>
+            </button>
+            <button class="btn btn-task-fast" type="button">
+              <i class='bx bxs-image-add'></i>
+            </button>
           </div>
         </form>
 
@@ -71,39 +75,33 @@
             </div>
           </div>
         </div> <!-- modal -->
-      </div>
+      </nav>
     </div> <!-- row -->
 
     <div class="container-fluid">
       <div class="row">
         <!-- aside lateral -->
-        <div class="sidebar col col-2 align-self-start" style="height: 100vh;">
+        <aside class="sidebar col col-2 align-self-start">
           <div class="logo-content">
-            <div class="logo">
-              <i class='bx bxs-lemon'></i>
-              <div class="logoName">Lara Ayumi</div>
-            </div>
-            <!--logo-->
-            <i class='bx bx-left-arrow'></i>
+            <!-- barra lateral -->
+            <!-- <i class='bx bx-left-arrow'></i> -->
           </div>
-          <!--logoContent-->
-          <ul class="nav-lis">
-          
+          <ul class="nav-list">
             <li>
               <a href="#">
                 <i class='bx bx-home-alt-2'></i>
-                <span class="links-name">Home</span>
+                <span class='links-name'>Home</span>
               </a>
             </li>
-          
+
             <li>
               <a href="#">
                 <i class='bx bx-shape-square'></i>
-                <span class="links-name">Técnico</span>
+                <span class='links-name'>Tecnico</span>
                 <i class='bx bx-chevron-down'></i>
               </a>
             </li>
-          
+
             <li>
               <a href="#">
                 <i class='bx bx-book-open'></i>
@@ -111,36 +109,18 @@
                 <i class='bx bx-chevron-down'></i>
               </a>
             </li>
-          
+
             <div class="tGrupo">
               <li>
-                <span class="links-name">Trabalho em grupo</span>
-                <a href="#">
-                  <i class='bx bxs-user-circle'></i><i class='bx bx-plus'></i>
-                </a>
+                  <span class="links-name">Trabalho em grupo</span>
+                  <a href="#">
+                      <i class='bx bxs-user-circle'></i><i class='bx bx-plus'></i>
+                  </a>
               </li>
-            </div>
-            <!--tGrupo-->
-          </ul>
-          
-          <!--conta/user para ver é só mudar a cor na class profileContent-->
-          <!--ul nav-list-->
-          <div class="profileContent">
-            <div class="profile">
-              <div class="profileDetail">
-                <i class='bx bx-user'></i>
-                <div class="name-job">
-                  <div class="name">Nicolle Lemos</div>
-                  <div class="job">Web Developer</div>
-                </div>
-              </div>
-              <!--profileDetail-->
-              <i class='bx bx-log-out-circle'></i>
-            </div>
-            <!--profile-->
           </div>
-            <!--profileContent-->
-        </div>
+          <!--tGrupo-->
+          </ul>
+        </aside>
 
         <!-- main -->
         <div class="main col col-10">
