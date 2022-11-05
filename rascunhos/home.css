@@ -1,7 +1,7 @@
+/* header -> button do user: arrumar a posição dele: está em baixo do aside*/
 :root{
   --background-body: #0F0416;
   --text-default: #ebebeb;
-  --text-tnp: #ebebeb99;
   --green-background: #212124;
 
   --azul-ceu-cyber: #22A0B6;
@@ -19,57 +19,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu';
 }
 
 body{
   background-color: var(--background-body);
   overflow: hidden;
   color: var(--text-default);
+  font-family: 'Roboto';
 }
-
-/* bootstraap */
-div.container-fluid{
-  padding: 0rem;
-}
-
-/* header */
+/* header -> modal */
 header{
-  background-color: var(--azul-noite-cyber);
-  height: 70px;
-}
-div.logo{
-  margin-top: 14px;
+  display: block;
+  left: 90vw;
 }
 
-/* nav - task fast e icon user*/
+/* nav */
 nav{
   background-color: var(--azul-noite-cyber);
-  color: var(--text-tnp);
+  border-radius: 50px;
+  display: block;
+
+  top: 14px;
+  left: 40%;
+  width: 100px;
+
   padding: 10px 20px;
 }
-nav i{
-  font-size: 20pt;
-  color: var(--text-tnp);
-}
-.input-group{
- border-color: var(--azul-ceu-cyber);
-}
+
 input.form-control, 
 button.btn-task-fast{
   border-radius: 16px;
   border-color: transparent;
   background-color: transparent;
+  color: #ebebebab;
 
   font-size: 14pt;
+  font-family: 'Roboto';
 }
 input#task-fast:focus, input#task-fast:hover{
+  font-family: 'Roboto';
   color: var(--text-default);
 }
 input#task-fast::placeholder{
-  font-size: 12pt;
-  font-weight: 400;
-  color: var(--text-tnp);
+  font-size: 11pt;
+  font-family: 'Roboto Mono';
+  color: #ebebebab;
 }
 input.form-control:hover, .form-control:focus{
   background-color: transparent;
@@ -81,44 +75,84 @@ input.form-control::placeholder, .form-control:hover{
   color: var(--text-default);
 }
 
-/* aside - sidebar*/
+button i{
+  font-size: 24px;
+}
+.btn-task-fast:hover{
+  color: var(--verde-claro-cyber);
+}
 
-.sidebar{
-  background-color: var(--azul-noite-cyber);
+/* icone do perfil do usuario */
+header{
+  display: flex;
+
+  left: 50%;
+}
+header i{
+  color: var(--text-default);
+  font-size: 24pt;
+}
+
+/* sidebar */
+aside{
   position: fixed;
+  background-color: var(--azul-noite-cyber);
+  border-radius: 20px;
+  display: block;
 
+  padding: 10px 20px;
+  
+  height: 100vh;
+  width: 200px;
+
+}
+/* sidebar */
+.sidebar{
+  position: fixed;
+  width: 200px;
+  left: 0;
+  top: 0;
   height: 100%;
-  padding: 15px 2px;
+  background-color: var(--azul-noite-cyber);
+  padding: 30px 10px;
   transition: all 0.3s ease;
 }
-/* barra lateral */
-/* 
+
+.sidebar .logo-container .logo{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  margin-left: 20px;
+}
+
 .sidebar .bx-left-arrow{
-  background-color: var(--azul-noite-cyber);
   position: absolute;
+  top: 35%;
+  left: 220px;
+  transform: translate(-50%);
   width: 50px;
   height: 263.85px;
-  border-radius: 0px 12px 12px 0px;
-  cursor: pointer;
-  
   line-height: 250px;
   text-align: center;
-  font-size: 26px;
+  font-size: 27px;
+  cursor: pointer;
+  /*para saber que o elemento é clicavel, mãozinha*/
   color: var(--verde-claro-cyber);
-  
-  transform: translate(-50%);
-  top: 35%;
-  left: 280px;
-
+  background-color: var(--azul-noite-cyber);
+  border-radius: 0px 12px 12px 0px;
 }
- */
+
 .sidebar ul{
   margin-top: 30px;
 }
+
 .sidebar li{
   list-style-type: none;
   font-size: 18px;
 }
+
 .sidebar ul li{
   position: relative;
   width: 100%;
@@ -126,6 +160,21 @@ input.form-control::placeholder, .form-control:hover{
   line-height: 50px;
   margin: 0 7px;
 }
+
+/* barra de pesquisa
+
+.sidebar ul li input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+  background: 
+}
+
+*/
 
 .sidebar ul li a{
   align-items: center;
@@ -147,45 +196,46 @@ input.form-control::placeholder, .form-control:hover{
   border-radius: 12px;
 
 }
+
 .bx-chevron-down{
   padding: 3px;
 }
 
-a{
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: 0.3s;
+.profile-container{
+  color: var(--azul-note-cyber);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .tGrupo{
   position: absolute;
   left: 0;
-  bottom: 45%;
+  bottom: 30%;
   width: 100%;
-  padding: 14px 20px;
+  padding: 10px;
 }
 
-/* main */
-div.main{
-  background-color: var(--background-body);
+.tGrupo .bxs-user-circle{
+  font-size: 36px;
+  padding: 6px;
+  padding-right: 1px;
 }
 
-/* article - calendario */
-div.article{
-  background-color: var(--verde-claro-cyber);
+/* CSS media query */
+@media screen and (max-width: 767px){
+  nav{
+    left: 45%;
+    width: 250px;
+
+  }
 }
 
+@media screen and (min-width: 767px){
+  nav{
+    width: 350px;
 
-
-
-/* media querius tablet - 767 minimo do web */
-@media(min-width: 769px) and (max-width: 1024px){
- 
-  
+  }
 }
 
-/* media querius mobile - 767 max do web */
-@media(min-width: 375px) {
-
-}
 

@@ -1,6 +1,19 @@
+# fazer na home
+  * arrow de minimizar:
+    - posicionamento
+    - ao aperta, ela minimizar a sidebar
+
+  * quando minimizar, só mostrar os icones
+
+  * header - logo:
+    - ao minimizar só mostrar o icone da logo
+
+  * design do input de criar tarefas
+
 # Pesquisar
 > https://devgabrielsouza.com.br/10-atributos-html-que-voce-precisa-conhecer/#:~:text=Com%20o%20atributo%20spellcheck%2C%20%C3%A9,com%20erros%20de%20qualquer%20forma.
 > spellcheck: avisa ao usuário sobre possíveis erros ortográficos
+
 # Nav
 **div 1**
 ```
@@ -15,6 +28,7 @@ barra de criar uma task rapida
 Search
 Icone de user/config
 ```
+
 # Task
 **Funções de cada Task**
 ```
@@ -31,6 +45,7 @@ Excluir lista
 Criação de elemento
 Mover elemento
 ```
+
 # Aside
 **div 1**
 ```
