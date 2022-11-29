@@ -1,0 +1,205 @@
+:root{
+    --azul-ceu-cyber: #22A0B6;
+    --azul-claro-cyber: #133E7C;
+    --azul-noite-cyber: #051A2D;
+    --rosa-claro-cyber: #E93BAE;
+    --roxo-escuro-cyber: #1D1546;
+    --roxo-claro-cyber: #7805DB;
+    --roxo-cyber: #3E1A63;
+    --verde-claro-cyber: #22D1A3;
+    --verde-escuro-cyber: #1A6352;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&display=swap');
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#130721, #051A2D);
+  }
+  
+  .container {
+    background-color: #051A2D;;
+    padding: 5px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #de004e;
+  }
+  
+  form {
+    position: absolute;
+    margin-top: 100px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .buttonsForm {
+    margin-top: 25px;
+    position: relative;
+    border-radius: 30px;
+  }
+  
+  .buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 19px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .btnPrimary {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    border-bottom: 2px solid #de004e;
+    transition: .3s;
+  }
+  
+.social-media {
+  position: absolute;
+  display: flex;
+  left: 32%;
+  bottom: 360px;
+}
+
+.list-social-media{
+    list-style-type: none;
+}
+
+li.item-social-media{
+  width: 100%;
+  display: inline;
+  width: 100%;
+  height: 100%;
+}
+
+.item-social-media{
+  font-size: 29px;
+  vertical-align: middle;
+}
+
+.item-social-media a{
+  color: var(--verde-claro-cyber);
+  overflow: hidden;
+  background: linear-gradient(to left, #22d1a3, #22D1A3 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.item-social-media a:hover{
+  background-position: 0 100%;
+}
+
+  input{
+    margin-top: 35px;
+  }
+  
+  input[type="text"], input[type="password"], input[type="date"]{
+    border: none;
+    border-radius: 60px;
+    padding: 8px 0 8px 38px;
+    outline: none;
+    align-items: center;
+    margin-left: 10px;
+    width: 90%;
+  }
+
+  input.email-signin{
+    margin-top: 90px;
+  }
+  
+  button[type="submit"] {
+    background: var(--roxo-cyber);
+    border-bottom: 2px solid #de004e;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.445);
+    color: white;
+    border-radius: 30px;
+    width: 80%;
+    outline: none;
+    padding: 8px 0 8px 5px;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+
+  .text-cad{
+    color: #22D1A3;
+    position: absolute;
+    left: 28%;
+    bottom: 385px;
+  }
+  
+  .divCheck {
+    margin-left: 50px;
+    width: 80%;
+    color: rgb(148, 147, 147);
+    font-size: 13px;
+  }
+  
+  #signin {
+    left: 25px;
+  }
+  
+  #signup {
+    left: 450px;
+    top: -20px;
+  }
+  
+  .i { 
+    position: absolute;
+    left: 20px;
+    padding: 77px 5px;
+    color: black;
+  }
+  
+  .iEmail{
+    color: black;
+    top: 20px;
+  }
+
+  .iPassword {
+    top: 85px;
+    color: black;
+  }
+
+  .iUser{
+    color: black;
+    bottom: 265px;
+  }
+
+  .iCale{
+    top: 31px;
+  }
+
+.iEmail2{
+    top: 100px;
+}
+
+.iPassword2{
+  top: 165px;
+}

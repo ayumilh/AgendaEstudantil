@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/logcad.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+      <div class="buttonsForm">
+        <div class="btnPrimary"></div>
+        <button id="btnSignin">ENTRAR</button>
+        <button id="btnSignup">CADASTRAR</button>
+      </div>
+  
+      <form id="signin">
+        <div class="social-media">
+            <ul class="list-social-media">
+                <li class="item-social-media"><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                <li class="item-social-media"><a href="#"><i class='bx bxl-github' ></i></a></li>
+                <li class="item-social-media"><a href="#"><i class='bx bxl-google-plus-circle' ></i></a></li>
+            </ul>
+        </div>
+        <input class="email-signin" type="text" placeholder="Email" required />
+        <i class="bx bxs-envelope iEmail i"></i>
+        <input type="password" placeholder="Password" required />
+        <i class="bx bxs-lock-alt iPassword i"></i>
+        <!--só como um espaço se não tiver a div-->
+        <br>
+        <br>
+        <br>
+       <!-- <div class="divCheck">
+          <input type="checkbox" />
+          <span>Lembrar senha</span>
+        </div>-->
+        <button type="submit">Entrar</button>
+      </form>
+  
+      <form id="signup">
+        <!--<span class="text-cad">Crie uma conta!</span>-->
+        <input type="text" placeholder="Nome de usuário" required />
+        <i class='bx bxs-user iUser i'></i>
+        <input type="date" placeholder="" required />
+        <i class='bx bx-calendar-event iCale i'></i>
+        <input type="text" placeholder="Email" required />
+        <i class="bx bxs-envelope iEmail2 i"></i>
+        <input type="password" placeholder="Password" required />
+        <i class="bx bxs-lock-alt iPassword2 i"></i>
+
+        
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
+        <script src="../script/logcad.js"></script>
+    
+</body>
+</html>
