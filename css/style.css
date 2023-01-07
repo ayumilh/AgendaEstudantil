@@ -45,6 +45,7 @@ nav{
 }
 
 .nav-list{
+  background-color: #E93BAE;
   display: flex;
 }
 .nav-list li{

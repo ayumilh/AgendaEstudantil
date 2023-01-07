@@ -134,22 +134,29 @@ input.form-control::placeholder, .form-control:hover{
 
 }
  */
-.sidebar ul{
-  margin-top: 30px;
+
+/* dropdown */
+.nav-list, .nav-list li{
+  list-style: none;
 }
-.sidebar li{
-  list-style-type: none;
-  font-size: 18px;
+.nav-list ul li{ 
+  /* esconder */
+  display: none;
+  /* position: absolute; */
 }
-.sidebar ul li{
-  position: relative;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  margin: 0 7px;
+.nav-list li:hover ul li{ 
+  /* mostrar */
+  display: block;
+}
+.nav-list li ul{
+  display: block;
 }
 
+/* add lista de tarefa */
+
+
 .sidebar ul li a{
+  position: block;
   align-items: center;
   border-radius: 20px;
   white-space: nowrap;
