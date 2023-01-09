@@ -38,7 +38,7 @@
       <nav class="navbar col col-10 justify-content-around">
         <form action="" class="d-flex">
           <div class="input-group">
-            <input type="text" class="form-control" id="task-fast" placeholder="Criar..." aria-label="Criar tarefa...">
+            <input type="text" class="form-control" placeholder="Criar..." aria-label="Criar tarefa...">
             
             <button class="btn btn-task-fast" type="button">
               <i class='bx bx-list-plus'></i>
@@ -91,7 +91,7 @@
           <!-- dropdown -->
           <ul class="nav-list">
             <li>
-              <a href="https://skiley.net/">
+              <a href="#">
                 <i class='bx bx-home-alt-2'></i>
                 Home
               </a>
@@ -115,13 +115,26 @@
               <a href="#" type="button" class="js-list-plus"><i class='bx bx-list-plus' ></i></a>
 
               <ul>
-                <input type="text" class="inp-lis-plus">
                 <li>
-                  <a href="#">web</a>
+                  <div class="list-plus">
+                    <button class="btn-plus">
+                      <i class='bx bx-plus'></i>
+                    </button>
+                    <input type="text" class="form-control inp-list-plus" placeholder="nova lista">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class='bx bx-minus'></i>
+                    <a href="#">web</a>
+                  </div>
                 </li>
 
                 <li>
-                  <a href="#">bd</a>
+                  <div>
+                    <i class='bx bx-minus'></i>
+                    <a href="#">bd</a>
+                  </div>
                 </li>
 
               </ul>
@@ -143,7 +156,7 @@
         <!-- tirei o col col-10 -->
         <main class="">
           <div class="list-task">
-
+            <!-- card list -->
             <div class="card text-center">
               <div class="card-header js-card-header">
                 <i class='bx bxs-pin'></i>

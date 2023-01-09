@@ -1,8 +1,8 @@
 :root{
-  --background-body: #0F0416;
-  --text-default: #ebebeb;
-  --text-tnp: #ebebeb99;
-  --green-background: #212124;
+  --background-body: hsl(277, 69%, 5%);
+  --text-default: hsl(0, 0%, 92%);
+  --text-tnp: hsla(0, 0%, 95%, 0.6);
+  --green-background: hsla(240, 4%, 14%, 0.3);
 
   /* cor dos card */
   --bs-blue: #1ba2f6;
@@ -46,7 +46,9 @@ body{
 div.container-fluid{
   padding: 0rem;
 }
-
+i{
+  color: var(--text-default);
+}
 /* header */
 header{
   background-color: var(--bs-dark);
@@ -64,36 +66,31 @@ nav{
 }
 nav i{
   font-size: 20pt;
-  color: var(--text-tnp);
 }
 .input-group{
  border-color: var(--azul-ceu-cyber);
 }
-input.form-control, 
-button.btn-task-fast{
-  border-radius: 16px;
-  border-color: transparent;
-  background-color: transparent;
 
-  font-size: 14pt;
+/* input */
+input.form-control, input.form-control:hover, .form-control:focus{
+  border-color: var(--background-body);
+  background-color: var(--green-background);
+  
+  border-radius: 12px;
 }
-input#task-fast:focus, input#task-fast:hover{
+input.form-control:focus, input.form-control:hover{
   color: var(--text-default);
+  box-shadow: 0 0 0 0;
 }
-input#task-fast::placeholder{
+input.form-control::placeholder{
   font-size: 12pt;
   font-weight: 400;
   color: var(--text-tnp);
 }
-input.form-control:hover, .form-control:focus{
-  background-color: transparent;
-  color: var(--text-default);
-  border-color: transparent;
-  box-shadow: 0 0 0 0;
-}
 input.form-control::placeholder, .form-control:hover{
-  color: var(--text-default);
+  color: var(--text-tnp); 
 }
+
 
 .position{
   position: relative;
@@ -142,7 +139,6 @@ input.form-control::placeholder, .form-control:hover{
 .nav-list ul li{ 
   /* esconder */
   display: none;
-  /* position: absolute; */
 }
 .nav-list li:hover ul li{ 
   /* mostrar */
@@ -153,7 +149,30 @@ input.form-control::placeholder, .form-control:hover{
 }
 
 /* add lista de tarefa */
+div.list-plus i{
+  font-size: 17pt;
+  color: var(--text-tnp);
+}
+div.list-plus{
+  position: relative;
+  width: 150px;
+}
+.btn-plus{
+  position:absolute;
+  bottom: 0; right:0; top: 0;
 
+  z-index: 0;
+  border:none;
+  background:transparent;
+  outline:none;
+}
+.inp-list-plus{
+  width: 130px;
+  height: 35px;
+}
+div.list-plus input{
+  width: 100%;
+}
 
 .sidebar ul li a{
   position: block;
@@ -189,7 +208,7 @@ a{
 .tGrupo{
   position: absolute;
   left: 0;
-  bottom: 45%;
+  bottom: 25%;
   width: 100%;
   padding: 14px 20px;
 }
