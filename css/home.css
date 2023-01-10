@@ -173,7 +173,11 @@ div.list-plus{
 div.list-plus input{
   width: 100%;
 }
+.hide{
+  display: none;
+}
 
+/* aside */
 .sidebar ul li a{
   position: block;
   align-items: center;
