@@ -10,8 +10,9 @@
 //   cardText.innerHTML = "estudar para prova";
 // })
 
+
 // ativando e desativando input
-var btnCallInp = document.querySelector(".js-list-plus"); /* button que chama o input */
+var btnCallInp = document.querySelector(".js-list-plus");
 var hide = document.querySelector(".hide");
 
 btnCallInp.addEventListener('click', function(e){
@@ -25,10 +26,10 @@ var lista = document.querySelectorAll("ul li ul li");
 
 // pegando o texto do input
 var inputList = document.querySelector(".inp-list-plus");
-var titleList = inputList.value;
-
 
 btnAddList.addEventListener('click', function(e){
   e.preventDefault();
+  // add lista
+  let titleList = inputList.value;
   console.log(titleList);
 })
