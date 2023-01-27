@@ -157,7 +157,12 @@ div.list-plus{
   position: relative;
   width: 150px;
 }
-.btn-plus{
+.new-task-button{
+  background-color: transparent;
+  border: transparent;
+}
+
+/* .btn-plus{  nao sei de onde é essa class
   position:absolute;
   bottom: 0; right:0; top: 0;
 
@@ -165,7 +170,8 @@ div.list-plus{
   border:none;
   background:transparent;
   outline:none;
-}
+} */
+
 .inp-list-plus{
   width: 130px;
   height: 35px;
@@ -207,6 +213,25 @@ a{
   color: #FFFFFF;
   text-decoration: none;
   transition: 0.3s;
+}
+
+/* list task */
+.task-container{
+  position: relative;
+
+  width: 5vw;
+  border-radius: 40px white;
+}
+.task-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+}
+.task-item p{
+  position: relative;
+  right: 25px;
+  top: 5px;
 }
 
 .tGrupo{
